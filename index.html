@@ -10,11 +10,15 @@
   </head>
   <body>
     <div class="h2">
-       <h1>🎮 Registro jugador </h1>
-    </div>
+       <h1>
+          <em> 🎮 Registro jugador </em>
+      </h1>
+    </div> 
     <div class="container">
         
-    <h1>🕹️ Crea tu perfil de jugador </h1>
+    <h1>
+        <em> 🕹️ Crea tu perfil de jugador  </em>
+    </h1>
       <!-- FORMULARIO HTML -->
       <form id="miFormulario">
         <!-- Campo de texto simple -->
@@ -189,22 +193,25 @@
             let nombreCampo = campo;
             switch (campo) {
               case 'nombre':
-                nombreCampo = 'Nombre completo';
+                nombreCampo = 'Nombre de jugador';
                 break;
-              case 'email':
-                nombreCampo = 'Correo electrónico';
+              case 'juego':
+                nombreCampo = 'Juego favorito';
                 break;
-              case 'edad':
-                nombreCampo = 'Edad';
+              case 'años':
+                nombreCampo = 'Años jugando';
                 break;
-              case 'ciudad':
-                nombreCampo = 'Ciudad';
+              case 'tipopjuego':
+                nombreCampo = 'Tipo de modo de juego';
                 break;
               case 'experiencia':
-                nombreCampo = 'Experiencia en programación';
+                nombreCampo = 'Experiencia jugando';
+                break;
+              case 'tipojuego':
+                nombreCampo = 'Cómo prefieres jugar';
                 break;
               case 'acepto':
-                nombreCampo = 'Términos aceptados';
+                nombreCampo = 'Acepto términos y condiciones';
                 break;
               case 'comentarios':
                 nombreCampo = 'Comentarios';
@@ -247,7 +254,7 @@
         const contenedor = document.querySelector('.container');
         const botonLimpiar = document.createElement('button');
         botonLimpiar.innerHTML = '🗑️ Limpiar mi perfil';
-        botonLimpiar.style.backgroundColor = '#ff9800';
+        botonLimpiar.style.backgroundColor = '#a34caf';
         botonLimpiar.style.marginTop = '10px';
         botonLimpiar.onclick = limpiarFormulario;
         contenedor.appendChild(botonLimpiar);
